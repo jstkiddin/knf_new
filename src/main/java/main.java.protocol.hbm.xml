@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!--suppress HibernateMappingDomInspection -->
+<hibernate-mapping package="sample.app.fun.java.ProtocolEntity">
+
+    <class name = "ProtocolEntity" table="protocol">
+        <meta attribute = "class-description">
+            This class contains NetFlow packet data
+        </meta>
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name = "ipClient" column = "ip_client" type = "string"/>
+        <property name = "ipServer" column = "ip_server" type = "string"/>
+        <property name = "appName" column = "app_name" type = "string"/>
+        <property name = "bytes" column = "bytes" type = "string"/>
+        <property name = "prot" column = "prot" type = "string"/>
+    </class>
+</hibernate-mapping>
