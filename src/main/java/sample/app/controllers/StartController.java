@@ -82,7 +82,7 @@ public class StartController implements Initializable {
     }
 
     public void menumouseExit(javafx.scene.input.MouseEvent mouseEvent) {
-        ((Node)mouseEvent.getSource()).setStyle("-fx-background-color: #2F575D; ");
+        ((Node)mouseEvent.getSource()).setStyle("-fx-background-color: #213c42; ");
     }
 
 
@@ -96,7 +96,7 @@ public class StartController implements Initializable {
     }
 
     public void menumouseReleased(MouseEvent mouseEvent) {
-        ((Node)mouseEvent.getSource()).setStyle("-fx-background-color: #71ff37; ");
+        ((Node)mouseEvent.getSource()).setStyle("-fx-background-color: #213c42; ");
         ((Node)mouseEvent.getSource()).setStyle("-fx-text-fill: #ffffff; ");
     }
 }
