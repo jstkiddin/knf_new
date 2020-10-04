@@ -22,7 +22,7 @@ public class Controller implements Initializable {
     //  @FXML
     //private Pane
     @FXML
-    private Button home_b, config_b, sett_b;
+    private Button home_b, config_b, sett_b,start_b;
 
     //mouse evt
     @FXML
@@ -47,6 +47,15 @@ public class Controller implements Initializable {
                 throwable.printStackTrace();
             }
             //  home_pane.toFront();
+        }
+        else if (actionEvent.getSource() == start_b){
+            fxml = "/app/scene/start_stage.fxml";
+            try {
+                loadStage(fxml, actionEvent);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+            }
+
         }
     }
 

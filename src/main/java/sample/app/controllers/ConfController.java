@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 
 public class ConfController implements Initializable {
     @FXML
-    private Button home_b, config_b, sett_b;
+    private Button home_b, config_b, sett_b, start_b;
 
 
     @FXML
@@ -42,6 +42,15 @@ public class ConfController implements Initializable {
                 throwable.printStackTrace();
             }
             //  home_pane.toFront();
+        }
+        else if (actionEvent.getSource() == start_b){
+            fxml = "/app/scene/start_stage.fxml";
+            try {
+                loadStage(fxml, actionEvent);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+            }
+
         }
     }
 

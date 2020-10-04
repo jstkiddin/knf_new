@@ -18,5 +18,7 @@
         <property name = "appName" column = "app_name" type = "string"/>
         <property name = "bytes" column = "bytes" type = "string"/>
         <property name = "prot" column = "prot" type = "string"/>
+        <property name = "version" column = "version" type = "int"/>
     </class>
+
 </hibernate-mapping>
